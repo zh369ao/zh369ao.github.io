@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+  <div id="post-list">
+    {% for post in paginator.posts %}
+<div class="post">
+  <h2 class="post-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+  <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
+  <div class="post-content">
+  {% if post.content contains '<!-- more -->' %}
+      {{ post.content | split:"<!-- more -->" | first }}
+      <a href="{{ post.url | prepend: site.baseurl }}" class="readmore">Read More &raquo;</a>  
+  {% else %}
+      {{ post.content }}
+  {% endif %}
+  </div>
+</div>
+    {% endfor %}
+  </div>
+
+
+  {% if paginator.total_pages > 1 %}
+<div id="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="prev">&laquo; Prev</a>
+  {% else %}
+    
+  {% endif %}
+
+  {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+      <span class="cur">{{ page }}</span>
+    {% elsif page == 1 %}
+      <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+    {% else %}
+      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+    {% endif %}
+  {% endfor %}
+
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="next">Next &raquo;</a>
+  {% else %}
+    
+  {% endif %}
+</div>
+{% endif %}
+

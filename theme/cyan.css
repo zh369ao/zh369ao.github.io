@@ -1,0 +1,92 @@
+body{
+    color: #aaa;
+    background: #000;
+}
+a{
+    color: #00C78A;
+}
+a:hover{
+    background: #00C78A;
+    color: #fff;
+}
+code,pre{
+    color:#bbb;
+    background:#141414;
+}
+code{
+    background: #222;
+}
+blockquote{
+    color: #888;
+    border-left: 4px solid #bbb;
+}
+del{
+    color: #ccc;
+}
+del a{
+    color: #ccc;
+}
+hr{
+    border-top:1px dashed #ccc;
+}
+
+/* -----------------
+header 
+-------------------- */
+h1{
+    color: #00C78A;
+}
+.desc{
+    color: #2F3B39;
+}
+#nav li a{
+    color: #2F3B39;
+}
+#nav li a.cur{
+    color: #00C78A;
+}
+#nav li a:hover,#footer a:hover{
+    color: #00C78A;
+    background: none;
+}
+
+/* ----------------- 
+footer
+-------------------- */
+
+#footer{
+    color: #2F3B39;
+}
+#footer a,#footer span{
+    color: #263B38;
+}
+
+/* -----------------
+content 
+-------------------- */
+
+.content{
+    background: #090909;
+}
+#post-list .post{
+    border-bottom: 1px dashed #555;
+}
+.post-meta{
+    color: #444;
+}
+.post-content a{
+    border-bottom: 1px solid #00C78A;
+}
+.post-content a:hover{
+    border: none;
+}
+.post-title{
+    color: #00C78A;
+}
+.eof{
+    color: #444;
+}
+#pagination span,#pagination a:hover{
+    background: #00C78A;
+    color: #fff;
+}

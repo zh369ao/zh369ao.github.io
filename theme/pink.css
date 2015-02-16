@@ -1,0 +1,99 @@
+/* -----------------
+base tag
+-------------------- */
+
+body{
+    color: #444;
+    background: #fff;
+}
+a{
+    color: #ff3875;
+}
+a:hover{
+    color: #333;
+}
+code,pre{
+    color:#aaa;
+    background:#fff;
+}
+code{
+    background: #fff;
+}
+blockquote{
+    color: #888;
+    border-left: 4px solid #bbb;
+}
+hr{
+    border-top:1px dashed #ccc;
+}
+
+/* -----------------
+header 
+-------------------- */
+
+#header h1{
+    color: #ff3875;
+}
+.desc{
+    color: #ccc
+}
+
+#nav li a{
+    color: #ddd;
+}
+#nav li a.cur{
+    color: #FF3875;
+}
+#nav li a:hover,#footer a:hover{
+    color: #FF3875;
+}
+a#pink:hover,a#cyan:hover{
+    background: #333;
+}
+
+/* ----------------- 
+footer
+-------------------- */
+
+#footer{
+    color: #ddd;
+}
+#footer a,#footer span{
+    color: #bbb;
+}
+a#pink:hover{
+    color: #ff3875;
+}
+a#cyan:hover{
+    color: #00C78A;
+}
+
+/* -----------------
+content 
+-------------------- */
+
+.content{
+    background: #f5f5f5;
+}
+#post-list .post{
+    border-bottom: 1px dashed #ccc;
+}
+.post-meta{
+    color: #ccc;
+}
+.post-content a{
+    border-bottom: 1px solid #ff3875;
+}
+.post-content a:hover{
+    border-bottom: 1px dotted #000;
+}
+.post-title{
+    color: #ff3875;
+}
+.eof{
+    color: #ccc;
+}
+#pagination span,#pagination a:hover{
+    background: #ff3875;
+    color: #fff;
+}

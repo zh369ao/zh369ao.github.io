@@ -1,0 +1,21 @@
+<div id="header">
+
+    <h1 href="{{ site.baseurl }}/">{{ site.title }}
+      <div id="color"><a href="#" id="pink">pink</a> <a href="#" id="cyan">cyan</a></div>
+    </h1>
+    <p class="desc">{{ site.description }}</p>
+
+
+    <ul id="nav">
+      <li><a href="{{ site.baseurl }}/index.html">index</a></li>
+      {% for page in site.pages %}
+        {% if page.title %}
+          <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+        {% endif %}
+      {% endfor %}
+      <li class="last"><a href="{{ "/feed.xml" | prepend: site.baseurl }}">rss</a></li> 
+    </ul>
+
+</div>
+
+

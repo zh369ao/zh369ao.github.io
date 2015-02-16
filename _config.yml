@@ -1,0 +1,12 @@
+title:       Coding Note
+description: stay hungry, stay foolish
+author:
+   name:    zh369ao
+
+baseurl:    "" # the subpath of your site, e.g. /blog
+permalink:  /post/:title.html
+
+paginate:   3
+
+markdown:   kramdown
+safe:       false
