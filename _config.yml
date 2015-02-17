@@ -6,7 +6,8 @@ author:
 baseurl:    "" # the subpath of your site, e.g. /blog
 permalink:  /post/:title.html
 
-paginate:   3
+paginate:      3
+paginate_path: page/:num
 
 markdown:   kramdown
 safe:       false

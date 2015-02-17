@@ -33,10 +33,13 @@ pre{
 }
 code{
     padding: 2px 5px;
+    margin: 0 3px;
 }
 pre code{
     font-size: 100%;
     background: none;
+    margin: 0;
+    padding: 0;
 }
 h3,h4{
     margin: 1.8em 0 0;
@@ -172,13 +175,12 @@ li.year{
     font-weight: bold;
     margin: 1.2em 0 0 -1.5em ;
 }
-a.readmore{
-    display: block;
-    border: none;
+.readmore{
+    margin: 1em 0 -.5em;
     font-weight: bold;
-    margin: 1em 0;
+    font-size: 120%;
 }
-a.readmore:hover{
+.readmore a,.readmore a:hover{
     border: none;
 }
 #pagination{
@@ -189,7 +191,17 @@ a.readmore:hover{
     padding:0 10px 5px;
 }
 
-
+/*-------------
+  Response Web Design
+---------------*/
+@media screen and (max-width: 720px) {
+  body{
+    font-size: 100%;
+  }
+  img{
+  max-width:96%;
+  }
+}
 /* -----------------
 Syntax highlighting styles
 -------------------- */

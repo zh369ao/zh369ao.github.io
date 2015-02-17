@@ -87,6 +87,9 @@ content
 .post-content a:hover{
     border-bottom: 1px dotted #000;
 }
+.readmore a,.readmore a:hover{
+    border: none;
+}
 .post-title{
     color: #ff3875;
 }
